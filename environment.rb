@@ -5,4 +5,4 @@ require_relative "./lib/races.rb"
 
 require 'pry'
 require 'json'
-require 'net-http'
+require 'net/http'
