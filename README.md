@@ -2,7 +2,7 @@ Welcome to the Maybelline products API!
 
 This API is designed to show a list and details of Maybelline makeup products.
 
-This API requires the installation of the JSON, pry, and net/http gems to run.
+This API requires the installation of the JSON, pry, and net/http(or net-http) gems to run.
 
 This project is licensed under the MIT License - see the license.md file for more details.
 
