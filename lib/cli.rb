@@ -43,7 +43,19 @@ class CLI
 
     end
     product_instance = Makeup.all[index]
+    display_product_details(product_instance)
     #binding.pry
+
+  end
+
+  def display_product_details(products)
+    #binding.pry
+    puts "Name: " + products.name
+    puts "Price: " + products.price
+    puts "\n"
+    puts "Description: " + products.description
+    puts "Rating: " + products.rating.to_s
+    puts "Product Type: " + products.product_type
 
   end
 
