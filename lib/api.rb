@@ -1,12 +1,11 @@
 class API
 
-  def fetch_classes
-    url = "http://www.dnd5eapi.co/classes/"
+  def self.fetch_classes
     #binding.pry
+    url = "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline"
+    binding.pry
     uri = URI(url)
-    response = Net::HTTP.get(uri)
-    #binding.pry
-    hash = JSON.parse(response)
+    response = Net::HTTP.get_response(uri)
   end
 
 
