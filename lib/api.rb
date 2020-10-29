@@ -8,7 +8,7 @@ class API
     response = Net::HTTP.get(uri)
     hash = JSON.parse(response)
 
-    array_of_products = hash("name")
+    array_of_products = hash
   end
 
 
