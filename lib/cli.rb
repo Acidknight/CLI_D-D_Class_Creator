@@ -18,6 +18,7 @@ class CLI
       puts "Confirmed, the products will come up shortly."
       puts "\n"
       display_products
+      ask_user_for_product_choice
     end
 
   end
@@ -29,6 +30,13 @@ class CLI
 
     end
 
+
+  end
+
+  def ask_user_for_product_choice
+    puts "Enter the number of the product you would like more information on."
+    index = gets.strip.to_i - 1
+    product_instance = Makeup.all[index]
 
   end
 
