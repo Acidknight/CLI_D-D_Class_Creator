@@ -16,7 +16,19 @@ class CLI
 
     if user_input == "yes" || user_input == "y"
       puts "Confirmed, the products will come up shortly."
+      puts "\n"
+      display_products
     end
+
+  end
+
+  def display_products
+    #binding.pry
+    Makeup.all.each do |products|
+      puts products.name
+
+    end
+
 
   end
 
