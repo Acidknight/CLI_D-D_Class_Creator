@@ -23,6 +23,8 @@ class CLI
       sleep(2)
 
       menu
+    else
+      puts "Thank you for using this program, have a nice day!"
     end
 
   end
