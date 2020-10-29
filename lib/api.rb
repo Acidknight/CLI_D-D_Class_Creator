@@ -11,7 +11,7 @@ class API
     array_of_products = hash
 
     array_of_products.each do |product_hash|
-      binding.pry
+      #binding.pry
       makeup = Makeup.new
       makeup.name = product_hash["name"]
       makeup.price = product_hash["price"]
@@ -20,6 +20,7 @@ class API
       makeup.product_type = product_hash["product_type"]
 
     end
+    binding.pry 
   end
 
 
