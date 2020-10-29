@@ -48,7 +48,7 @@ class CLI
     end
     product_instance = Makeup.all[index]
     display_product_details(product_instance)
-    #binding.pry
+    ##binding.pry
 
   end
 
