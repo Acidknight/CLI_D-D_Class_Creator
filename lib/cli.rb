@@ -3,7 +3,7 @@ class CLI
   def start
     #binding.pry
     puts "Welcome!"
-    API.fetch_classes
+    API.fetch_products
   end
 
 end
