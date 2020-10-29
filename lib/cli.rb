@@ -19,6 +19,10 @@ class CLI
       puts "\n"
       display_products
       ask_user_for_product_choice
+
+      sleep(2)
+
+      menu
     end
 
   end
