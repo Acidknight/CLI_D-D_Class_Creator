@@ -36,7 +36,14 @@ class CLI
   def ask_user_for_product_choice
     puts "Enter the number of the product you would like more information on."
     index = gets.strip.to_i - 1
+
+    until index.between?(0, Makeup.all.length - 1)
+      puts "Invalid choice, please choose the number of the product you wish to know more about."
+      index = gets.strip.to_i - 1
+
+    end
     product_instance = Makeup.all[index]
+    #binding.pry
 
   end
 
