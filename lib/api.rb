@@ -14,6 +14,10 @@ class API
       binding.pry
       makeup = Makeup.new
       makeup.name = product_hash["name"]
+      makeup.price = product_hash["price"]
+      makeup.description = product_hash["description"]
+      makeup.rating = product_hash["rating"]
+      makeup.product_type = product_hash["product_type"]
 
     end
   end
