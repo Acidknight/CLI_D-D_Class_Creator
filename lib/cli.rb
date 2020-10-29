@@ -24,8 +24,8 @@ class CLI
 
   def display_products
     #binding.pry
-    Makeup.all.each do |products|
-      puts products.name
+    Makeup.all.each.with_index(1) do |products, index|
+      puts "#{index}. #{products.name}"
 
     end
 
