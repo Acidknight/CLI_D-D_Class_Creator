@@ -1,9 +1,7 @@
 class API
 
   def self.fetch_products
-    #binding.pry
     url = "http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline"
-    #binding.pry
     uri = URI(url)
     response = Net::HTTP.get(uri)
     hash = JSON.parse(response)
@@ -20,7 +18,6 @@ class API
       makeup.product_type = product_hash["product_type"]
 
     end
-    #binding.pry
   end
 
 

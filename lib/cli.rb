@@ -1,7 +1,6 @@
 class CLI
 
   def start
-    #binding.pry
     puts "Welcome!"
     API.fetch_products
     self.menu
@@ -30,12 +29,10 @@ class CLI
   end
 
   def display_products
-    #binding.pry
     Makeup.all.each.with_index(1) do |products, index|
       puts "#{index}. #{products.name}"
 
     end
-
 
   end
 
@@ -50,19 +47,15 @@ class CLI
     end
     product_instance = Makeup.all[index]
     display_product_details(product_instance)
-    ##binding.pry
-
   end
 
   def display_product_details(products)
-    #binding.pry
     puts "Name: " + products.name
     puts "Price: " + products.price
     puts "\n"
     puts "Description: " + products.description
     puts "Rating: " + products.rating.to_s
     puts "Product Type: " + products.product_type
-
   end
 
 end
