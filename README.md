@@ -9,4 +9,4 @@ This project is licensed under the MIT License - see the license.md file for mor
 Contributor's Guide: The Makeup API for their very useful database.
 Database can be found here:http://makeup-api.herokuapp.com
 
-To start enter ruby bin/run into your terminal!
+To start enter ruby bin/run into your terminal.
